@@ -10,7 +10,7 @@ const Form = () => (
                         Kwota w PLN*:
                     </span>
                     <input className="form__field" type="number" name="amount" min="0" step="0.01"
-                        placeholder="Wpisz kwotę w PLN" required />
+                        placeholder="Wpisz kwotę w PLN" autoFocus required />
                 </label>
             </p>
             <p>
