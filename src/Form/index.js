@@ -59,8 +59,8 @@ const Form = ({ calculateResult, result }) => {
       <p>
         <button className="form__button">Przelicz!</button>
       </p>
-      <p className="form__info">Kursy pochodzą ze strony Narodowego Banku Polskiego z Tabeli nr 245/A/NBP/2022 z dnia
-        2022-12-20.</p>
+      <p className="form__info">Kursy pochodzą ze strony Narodowego Banku Polskiego z Tabeli nr 073/A/NBP/2023 z dnia
+        2023-04-14.</p>
       <Result result={result} />
     </form>
   );
