@@ -1,9 +1,9 @@
-import "./style.css";
+import { FormContainer } from "./styled";
 
 const Container = ({ children }) => (
-    <div className="container">
+    <FormContainer>
         {children}
-    </div>
+    </FormContainer>
 );
 
 export default Container;

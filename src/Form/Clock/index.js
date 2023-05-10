@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import "./style.css";
+import { CurrentDate } from "./styled";
 
-const dateFormatted = (date) =>
+const formatDate = (date) =>
     date.toLocaleString(undefined, {
         weekday: "long",
         day: "numeric",
@@ -23,11 +23,11 @@ const Clock = () => {
     });
 
     return (
-        <p className="date">
+        <CurrentDate>
             Dzisiaj jest
             {" "}
-            {dateFormatted(date)}
-        </p>
+            {formatDate(date)}
+        </CurrentDate>
     );
 };
 

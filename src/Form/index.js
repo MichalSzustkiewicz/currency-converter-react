@@ -2,7 +2,7 @@ import { useState } from "react";
 import currencies from "../currencies";
 import Clock from "./Clock";
 import Result from "./Result";
-import "./style.css";
+import { Fieldset, FormButton, FormField, Info, LabelText, Legend } from "./styled";
 
 const Form = ({ calculateResult, result }) => {
   const [amount, setAmount] = useState("");
@@ -14,19 +14,18 @@ const Form = ({ calculateResult, result }) => {
   };
 
   return (
-    <form className="form" onSubmit={onFormSubmit}>
+    <form onSubmit={onFormSubmit}>
       <Clock />
-      <fieldset className="form__fieldset">
-        <legend className="form__legend">Kalkulator walut</legend>
+      <Fieldset>
+        <Legend>Kalkulator walut</Legend>
         <p>
           <label>
-            <span className="form__labelText">
+            <LabelText>
               Kwota w PLN*:
-            </span>
-            <input
+            </LabelText>
+            <FormField
               value={amount}
               onChange={({ target }) => setAmount(target.value)}
-              className="form__field"
               type="number"
               min="0"
               step="0.01"
@@ -38,13 +37,12 @@ const Form = ({ calculateResult, result }) => {
         </p>
         <p>
           <label>
-            <span className="form__labelText">
+            <LabelText>
               Waluta:
-            </span>
-            <select
+            </LabelText>
+            <FormField as="select"
               value={currency}
               onChange={({ target }) => setCurrency(target.value)}
-              className="form__field"
             >
               {currencies.map((currency) => (
                 <option
@@ -54,15 +52,15 @@ const Form = ({ calculateResult, result }) => {
                   {currency.name}
                 </option>
               ))}
-            </select>
+            </FormField>
           </label>
         </p>
-      </fieldset>
+      </Fieldset>
       <p>
-        <button className="form__button">Przelicz!</button>
+        <FormButton>Przelicz!</FormButton>
       </p>
-      <p className="form__info">Kursy pochodzą ze strony Narodowego Banku Polskiego z Tabeli nr 073/A/NBP/2023 z dnia
-        2023-04-14.</p>
+      <Info>Kursy pochodzą ze strony Narodowego Banku Polskiego z Tabeli nr 073/A/NBP/2023 z dnia
+        2023-04-14.</Info>
       <Result result={result} />
     </form>
   );
