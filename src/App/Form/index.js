@@ -1,5 +1,5 @@
 import { useState } from "react";
-import currencies from "../App/currencies";
+import currencies from "../currencies";
 import Clock from "./Clock";
 import Result from "./Result";
 import { Fieldset, Button, FormField, Info, LabelText, Legend } from "./styled";
