@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Fieldset = styled.fieldset`
-    border: 1.5px solid hsl(197, 80%, 30%);
+    border: 1.5px solid ${({ theme }) => theme.color.easternBlue};
     padding: 20px;
     border-radius: 3px;
     margin: 20px 0;
@@ -9,8 +9,8 @@ export const Fieldset = styled.fieldset`
 `;
 
 export const Legend = styled.legend`
-    background-color: hsl(197, 80%, 40%);
-    color: white;
+    color: ${({ theme }) => theme.color.white};
+    background: ${({ theme }) => theme.color.easternBlue};
     padding: 10px;
     border-radius: 3px;
 `;
@@ -24,14 +24,14 @@ export const LabelText = styled.span`
 `;
 
 export const FormField = styled.input`
-    border: 1px solid hsl(197, 80%, 40%);
+    border: 1px solid ${({ theme }) => theme.color.easternBlue};
     padding: 5px;
     width: 100%;
     max-width: 370px;
     border-radius: 3px;
 
     &:required {
-        border: 2px solid hsl(197, 80%, 40%);
+        border: 2px solid ${({ theme }) => theme.color.easternBlue};
     }
 `;
 
@@ -39,16 +39,17 @@ export const Button = styled.button`
     width: 100%;
     border: none;
     padding: 10px;
-    color: white;
-    background-color: hsl(197, 80%, 40%);
+    color: ${({ theme }) => theme.color.white};
+    background: ${({ theme }) => theme.color.easternBlue};
     border-radius: 3px;
+    transition: filter 0.5s linear;
 
     &:hover {
-        background-color: hsl(197, 80%, 43%);
+        filter: brightness(110%);
     }
 
     &:active {
-        background-color: hsl(197, 80%, 46%);
+        filter: brightness(120%);
     }
 `;
 

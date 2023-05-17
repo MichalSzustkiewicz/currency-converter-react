@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
     flex-basis: 650px;
     margin: 20px;
     padding: 40px;
-    background-color: #eee;
+    background: ${({ theme }) => theme.color.gallery};
     border-radius: 15px;
     box-shadow: 5px 5px 30px black;
 `;
