@@ -6,39 +6,37 @@ export const Fieldset = styled.fieldset`
     border-radius: 3px;
     margin: 20px 0;
     width: 100%;
-    flex-basis: 700px;
-`
+`;
 
 export const Legend = styled.legend`
     background-color: hsl(197, 80%, 40%);
     color: white;
     padding: 10px;
     border-radius: 3px;
-`
+`;
 
 export const LabelText = styled.span`
-    flex-basis: 150px;
     width: 100%;
+    max-width: 130px;
     display: inline-block;
     margin-right: 5px;
     margin-bottom: 5px;
-`
+`;
 
 export const FormField = styled.input`
     border: 1px solid hsl(197, 80%, 40%);
     padding: 5px;
-    flex-basis: 450px;
     width: 100%;
+    max-width: 370px;
     border-radius: 3px;
 
     &:required {
         border: 2px solid hsl(197, 80%, 40%);
     }
-`
+`;
 
-export const FormButton = styled.button`
+export const Button = styled.button`
     width: 100%;
-    flex-basis: 700px;
     border: none;
     padding: 10px;
     color: white;
@@ -52,11 +50,11 @@ export const FormButton = styled.button`
     &:active {
         background-color: hsl(197, 80%, 46%);
     }
-`
+`;
 
 export const Info = styled.p`
     font-family: "Arial", sans-serif;
     font-size: 12px;
     font-style: italic;
     text-align: center;
-`
+`;

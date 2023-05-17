@@ -1,8 +1,8 @@
 import { useState } from "react";
-import currencies from "../currencies";
+import currencies from "../App/currencies";
 import Clock from "./Clock";
 import Result from "./Result";
-import { Fieldset, FormButton, FormField, Info, LabelText, Legend } from "./styled";
+import { Fieldset, Button, FormField, Info, LabelText, Legend } from "./styled";
 
 const Form = ({ calculateResult, result }) => {
   const [amount, setAmount] = useState("");
@@ -20,9 +20,7 @@ const Form = ({ calculateResult, result }) => {
         <Legend>Kalkulator walut</Legend>
         <p>
           <label>
-            <LabelText>
-              Kwota w PLN*:
-            </LabelText>
+            <LabelText>Kwota w PLN*:</LabelText>
             <FormField
               value={amount}
               onChange={({ target }) => setAmount(target.value)}
@@ -37,10 +35,9 @@ const Form = ({ calculateResult, result }) => {
         </p>
         <p>
           <label>
-            <LabelText>
-              Waluta:
-            </LabelText>
-            <FormField as="select"
+            <LabelText>Waluta:</LabelText>
+            <FormField
+              as="select"
               value={currency}
               onChange={({ target }) => setCurrency(target.value)}
             >
@@ -57,13 +54,17 @@ const Form = ({ calculateResult, result }) => {
         </p>
       </Fieldset>
       <p>
-        <FormButton>Przelicz!</FormButton>
+        <Button>Przelicz!</Button>
       </p>
-      <Info>Kursy pochodzą ze strony Narodowego Banku Polskiego z Tabeli nr 073/A/NBP/2023 z dnia
-        2023-04-14.</Info>
+
+      <Info>
+        Kursy pochodzą ze strony Narodowego Banku Polskiego z Tabeli nr 073/A/NBP/2023 z dnia
+        2023-04-14.
+      </Info>
+
       <Result result={result} />
     </form>
   );
-}
+};
 
 export default Form;

@@ -1,5 +1,5 @@
 import { useCurrentDate } from "./useCurrentDate";
-import { CurrentDate } from "./styled";
+import { Wrapper } from "./styled";
 
 const formatDate = (date) =>
     date.toLocaleString(undefined, {
@@ -15,11 +15,11 @@ const Clock = () => {
     const date = useCurrentDate();
 
     return (
-        <CurrentDate>
+        <Wrapper>
             Dzisiaj jest
             {" "}
             {formatDate(date)}
-        </CurrentDate>
+        </Wrapper>
     );
 };
 
