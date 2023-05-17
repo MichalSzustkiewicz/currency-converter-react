@@ -1,7 +1,7 @@
-import Form from "./Form";
-import Container from "./Container";
+import Form from "../Form";
 import currencies from "./currencies";
 import { useState } from "react";
+import { Wrapper } from "./styled";
 
 function App() {
   const [result, setResult] = useState();
@@ -17,12 +17,12 @@ function App() {
   };
 
   return (
-    <Container>
+    <Wrapper>
       <Form
         result={result}
         calculateResult={calculateResult}
       />
-    </Container>
+    </Wrapper>
   );
 }
 
