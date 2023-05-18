@@ -15,9 +15,11 @@ In order to use the application, please type in the first field ("Kwota w PLN*) 
 ## Languages and technologies
 
 - HTML
-- CSS (BEM, Flex Box)
+- Flexbox
+- styled components
 - JavaScript (ES6+)
 - Create React App (webpack, Babel)
+- useState, useEffect, custom hooks
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
