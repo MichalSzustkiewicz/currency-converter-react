@@ -27,7 +27,7 @@ export const FormField = styled.input`
     border: 1px solid ${({ theme }) => theme.color.easternBlue};
     padding: 5px;
     width: 100%;
-    max-width: 370px;
+    max-width: 470px;
     border-radius: 3px;
 
     &:required {
@@ -58,4 +58,18 @@ export const Info = styled.p`
     font-size: 12px;
     font-style: italic;
     text-align: center;
+`;
+
+export const Loading = styled.p`
+    color: ${({ theme }) => theme.color.easternBlue};
+    text-align: center;
+    line-height: 1.5;
+    padding-top: 100px;
+`;
+
+export const Failure = styled.p`
+    color: ${({ theme }) => theme.color.crimson};
+    text-align: center;
+    line-height: 1.5;
+    padding: 80px;
 `;
