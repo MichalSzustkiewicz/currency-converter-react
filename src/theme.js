@@ -4,5 +4,6 @@ export const theme = {
         gallery: "#eee",
         white: "#fff",
         easternBlue: "#1489b8",
+        crimson: "#db143c",
     },
 };
