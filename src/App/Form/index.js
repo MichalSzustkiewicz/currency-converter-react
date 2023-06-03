@@ -26,14 +26,14 @@ const Form = () => {
 
   return (
     <form onSubmit={onFormSubmit}>
-      {ratesData.state === "loading"
+      {ratesData.status === "loading"
         ? (
           <Loading>
             Zaczekaj chwilkę... <br /> Ładuję aktualne kursy walut z Europejskiego Banku Centralnego...
           </Loading>
         )
         : (
-          ratesData.state === "error"
+          ratesData.status === "error"
             ? (
               <Failure>
                 Coś poszło nie tak. Sprawdź, czy masz połączenie z siecią. Jeśli tak, wygląda na to, że problem wystąpił po naszej stronie. <br /> <br /> Spróbuj ponownie później. Przepraszamy za utrudnienia.
