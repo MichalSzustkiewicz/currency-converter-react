@@ -6,7 +6,7 @@ https://michalszustkiewicz.github.io/currency-converter-react/
 
 ## Description
 
-This simple application has been created as a part of the project carried out at [YouCode](https://youcode.pl/) programming school. You may use it e.g. to check how much money you will get if you want to exchange from polish "zloty" (PLN) to some other common currencies. Returned values are based on data obtained from the Polish National Bank on 14.04.2023.
+This simple application has been created as a part of the project carried out at [YouCode](https://youcode.pl/) programming school. You may use it e.g. to check how much money you will get if you want to exchange from polish "zloty" (PLN) to some other common currencies. Actual exchange rates are fetched from an open API and based on data coming from European Central Bank.
 
 In order to use the application, please type in the first field ("Kwota w PLN*) the amount of money in PLN. Then choose one from seven available currencies in the second field ("Waluta"). To receive the result click "Przelicz!" (demonstration below).
 
@@ -15,11 +15,11 @@ In order to use the application, please type in the first field ("Kwota w PLN*) 
 ## Languages and technologies
 
 - HTML
-- Flexbox
-- styled components
+- CSS (Flex, styled components)
 - JavaScript (ES6+)
 - Create React App (webpack, Babel)
 - useState, useEffect, custom hooks
+- fetching data from public API (fetch, axios, async/await)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
