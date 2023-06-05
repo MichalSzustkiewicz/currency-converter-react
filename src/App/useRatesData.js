@@ -9,7 +9,7 @@ export const useRatesData = () => {
     useEffect(() => {
         const fetchRates = async () => {
             try {
-                const requestURL = "https://api.exchangerate.host/latest?base=PLN";
+                const requestURL = "https://api.exchangerate.host/latest?base=PLN&symbols=AUD,CAD,CHF,EUR,GBP,ILS,USD";
                 const response = await axios.get(requestURL);
                 const { rates, date } = response.data;
 
