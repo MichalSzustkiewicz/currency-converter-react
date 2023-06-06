@@ -6,7 +6,7 @@ import { useRatesData } from "../useRatesData";
 const Form = () => {
   const [amount, setAmount] = useState("");
   const [currency, setCurrency] = useState("USD");
-  const [result, setResult] = useState();
+  const [result, setResult] = useState(null);
   const ratesData = useRatesData();
 
   const calculateResult = (amount, currency) => {

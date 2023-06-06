@@ -2,7 +2,7 @@ import { Wrapper } from "./styled";
 
 const Result = ({ result }) => (
   <Wrapper>
-    {result !== undefined && (
+    {result !== null && (
       <>
         {result.sourceAmount.toFixed(2)}&nbsp;PLN&nbsp;=&nbsp;
         <strong>
