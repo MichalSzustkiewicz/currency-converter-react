@@ -64,12 +64,12 @@ export const Loading = styled.p`
     color: ${({ theme }) => theme.color.easternBlue};
     text-align: center;
     line-height: 1.5;
-    padding-top: 100px;
+    padding-top: 120px;
 `;
 
 export const Failure = styled.p`
     color: ${({ theme }) => theme.color.crimson};
     text-align: center;
     line-height: 1.5;
-    padding: 80px;
+    padding: 100px;
 `;
